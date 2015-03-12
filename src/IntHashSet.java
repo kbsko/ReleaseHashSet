@@ -9,7 +9,6 @@ public class IntHashSet implements Iterable, Iterator<Integer> {
     public int size = 10;
     public ArrayList<Integer>[] intHashTable;
     public ArrayList<Integer> allValue = new ArrayList<Integer>();
-    public String massive = "";
     private int count = 0;
     private int count2 = 0;
 
@@ -38,15 +37,15 @@ public class IntHashSet implements Iterable, Iterator<Integer> {
     // Вывод элементов IntHashSet
     @Override
     public String toString() {
-        massive = "";
+        String stringBuilder= "";
         // Вывод всех элементов массива
         for (int i = 0; i < size; i++) {
             if (intHashTable[i] == null) continue;
             for (int j = 0; j < intHashTable[i].size(); j++) {
-                massive = massive + intHashTable[i].get(j) + " ";
+                stringBuilder = stringBuilder + intHashTable[i].get(j) + " ";
             }
         }
-        return "[ " + this.massive + "]";
+        return "[ " + stringBuilder+ "]";
     }
 
     //Определяет размер массива
