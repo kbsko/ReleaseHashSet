@@ -31,8 +31,7 @@ public class IntHashSet implements Iterable, Iterator<Integer> {
             intHashTable[key].add(value); // Добавляем элемент
             allValue.add(value);
         }
-        //System.out.println(intHashTable[3]);
-    }
+         }
 
     // Вывод элементов IntHashSet
     @Override
